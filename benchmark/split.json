@@ -1,0 +1,20 @@
+{
+  "data_version": "0.1.0",
+  "holdout_groups": [
+    "G1-EXA-CEL-CLIMB-SCD121",
+    "G2-HYD-TOWNSES-MOUSE",
+    "G3-F-A-ERYTHROBLAST",
+    "G4-BCL11A-SILENCING-NEJM2021",
+    "G5-INDIVIDUAL-RBC-HBFPERCELL"
+  ],
+  "train_groups": [],
+  "cases": {
+    "holdout": ["C-01", "C-02", "C-03", "C-04", "C-05", "C-06", "C-07", "C-08", "C-09", "C-10", "C-11", "C-12", "C-13", "C-14", "C-15", "C-16", "C-17", "C-18", "C-19", "C-20", "C-21", "C-22", "C-23", "C-24", "C-25", "C-26"],
+    "train": []
+  },
+  "audit": {
+    "group_leakage": "All 26 benchmark cases are in the scored holdout (train_groups empty): every case's group_id is in holdout_groups; no holdout case shares a group with a train case (none); no cases excluded from the holdout.",
+    "near_duplicate_templates": ["C-06 — edited wording of C-01; grouped with C-01 (source) per the edited/edited_source fields."],
+    "unresolved_cohorts_excluded": []
+  }
+}

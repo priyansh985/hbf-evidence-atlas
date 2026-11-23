@@ -1,0 +1,25 @@
+{
+  "record_id": "P-011",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 32681733 (Am J Hematol 95(11):1235–1245, 2020)",
+    "doi": "10.1002/ajh.25937",
+    "url": "https://doi.org/10.1002/ajh.25937",
+    "figure_table": "Abstract of the individual-red-cell HbF quantification paper",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G5-INDIVIDUAL-RBC-HBFPERCELL",
+    "species": "human",
+    "intervention": "hydroxyurea (14 SCD patients; HbF measured before and during treatment)"
+  },
+  "observation": {
+    "readout_kind": "hbF-per-cell",
+    "assay": "Direct per-cell HbF quantification in individual red blood cells by flow cytometry (linear association between mean HbF and mean RBC fluorescence from a calibrated anti-HbF method)",
+    "value": 4,
+    "unit": "pg HbF per RBC — protective threshold (VOC incidence decreased at the 4 pg threshold; 14 SCD patients, before and during hydroxyurea)",
+    "denominator": "unknown",
+    "evidence_locator": "Hebert et al., Am J Hematol 95(11):1235–1245; PMID 32681733; abstract"
+  },
+  "note": "Also: a significant decrease in the population of RBCs with less than 2 pg of HbF/RBC was observed during HU treatment. Distinguishes total HbF, the fraction of positive cells, directly measured per-cell HbF, and derived quantities (design-spec seed 4). G5 gives the per-cell readout; the protective threshold of 4 pg is the key observation."
+}

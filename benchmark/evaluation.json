@@ -1,0 +1,255 @@
+{
+  "holdout_group_ids": [
+    "G1-EXA-CEL-CLIMB-SCD121",
+    "G2-HYD-TOWNSES-MOUSE",
+    "G3-F-A-ERYTHROBLAST",
+    "G4-BCL11A-SILENCING-NEJM2021",
+    "G5-INDIVIDUAL-RBC-HBFPERCELL"
+  ],
+  "total_cases": 26,
+  "scored_cases": 26,
+  "metrics": {
+    "unsupported_endorsement_rate": 0.16666666666666666,
+    "supported_claim_acceptance": 0.35,
+    "abstention_rate": 0.0,
+    "missing_prediction_rate": 0.0
+  },
+  "per_case": [
+    {
+      "case_id": "C-01",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-02",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-03",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-04",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "contradicted",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-05",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "insufficient",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-06",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-07",
+      "group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-08",
+      "group_id": "G2-HYD-TOWNSES-MOUSE",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-09",
+      "group_id": "G2-HYD-TOWNSES-MOUSE",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-10",
+      "group_id": "G2-HYD-TOWNSES-MOUSE",
+      "reference": "contradicted",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-11",
+      "group_id": "G2-HYD-TOWNSES-MOUSE",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-12",
+      "group_id": "G2-HYD-TOWNSES-MOUSE",
+      "reference": "insufficient",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-13",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-14",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-15",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-16",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "insufficient",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-17",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-18",
+      "group_id": "G3-F-A-ERYTHROBLAST",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-19",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-20",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-21",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-22",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-23",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-24",
+      "group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "reference": "insufficient",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-25",
+      "group_id": "G5-INDIVIDUAL-RBC-HBFPERCELL",
+      "reference": "supported",
+      "predicted": "supported",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    },
+    {
+      "case_id": "C-26",
+      "group_id": "G5-INDIVIDUAL-RBC-HBFPERCELL",
+      "reference": "supported",
+      "predicted": "insufficient",
+      "abstained": false,
+      "has_prediction": true,
+      "status": "scored"
+    }
+  ],
+  "missing_predictions": [],
+  "abstentions": 0
+}

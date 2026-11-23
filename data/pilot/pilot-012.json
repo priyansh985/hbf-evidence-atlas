@@ -1,0 +1,21 @@
+{
+  "record_id": "P-012",
+  "record_type": "gap",
+  "source": {
+    "source_id": "Advances in Therapy 42(5):2490–2499, 2025 (Frangoul et al.; doi 10.1007/s12325-025-03162-2)",
+    "url": "https://doi.org/10.1007/s12325-025-03162-2",
+    "figure_table": "Reanalysis of the CLIMB SCD-121 patient-level data under the broader severe-VOE definition",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+    "species": "human",
+    "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)"
+  },
+  "observation": {
+    "readout_kind": "vo-free-event",
+    "assay": "F-cell durability follow-up >12 months after the 12-month endpoint",
+    "evidence_locator": "Endpoint reanalysis: Frangoul et al., Advances in Therapy 42, 2490–2499; data cut 14 Jun 2023"
+  },
+  "note": "F-cell durability follow-up beyond the 12-month endpoint: not reported in the endpoint reanalysis (data cut 14 Jun 2023); pending — out-standing uncertainty recorded in the pilot findings."
+}

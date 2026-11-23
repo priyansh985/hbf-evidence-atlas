@@ -1,0 +1,23 @@
+{
+  "record_id": "P-007",
+  "record_type": "gap",
+  "source": {
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "doi": "10.1182/blood.2020005058",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32268371/",
+    "figure_table": "Supplemental RNA-seq methods (GSE144052)",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G3-F-A-ERYTHROBLAST",
+    "species": "human",
+    "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts",
+    "intervention": "none"
+  },
+  "observation": {
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA in stage-matched F/A cells via RNA-seq",
+    "evidence_locator": "Blood 2020; PMC7256358; RNA-seq (GSE144052)"
+  },
+  "note": "RNA-seq was performed after depletion of ribosomal RNA and globin RNA — γ transcripts are suppressed (~1000-fold) in the RNA-seq data, inconsistent with the qRT-PCR enrichment in F vs A (assay mismatch; spec seed: 'the RNA-seq protocol depleted globin RNA'). Example of a mismatch between matched readouts of the same cells."
+}

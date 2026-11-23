@@ -1,0 +1,26 @@
+{
+  "record_id": "P-009",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "doi": "10.1056/NEJMoa2029392",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33283990/",
+    "figure_table": "Results of the BCH-BB694 BCL11A-shmiR gene therapy pilot",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+    "species": "human",
+    "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+  },
+  "observation": {
+    "readout_kind": "f-cell-percent",
+    "assay": "F-cells (HbF-containing red cells) — percentage of untransfused red cells",
+    "value": [58.9, 93.6],
+    "unit": "percent of untransfused red cells (range across 6 patients)",
+    "denominator": "unknown",
+    "time_point": "most recent follow-up",
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'F-cells 58.9 to 93.6% of untransfused red cells'"
+  },
+  "note": "Matches P-008 (HbF% and F-cell% from the same pilot cohort; cross-readout within G4)."
+}

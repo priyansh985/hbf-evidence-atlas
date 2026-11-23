@@ -1,0 +1,227 @@
+[
+  {
+    "obs_id": "P-001",
+    "source_id": "PMID 38661449",
+    "context": {
+      "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "species": "human",
+      "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)",
+      "genotype": "severe SCD (HbSS per trial inclusion: severe SCD; ages 12–35)",
+      "sample_linkage": "evaluable cohort of the pivotal trial (CLIMB SCD-121)",
+      "stage": "efficacy endpoint; data cut 14 Jun 2023"
+    },
+    "readout_kind": "vo-free-event",
+    "assay": "Freedom from severe vaso-occlusive crises for at least 12 consecutive months (broad severe-VOC endpoint: any medical facility visit of any duration, any cause; per the endpoint reanalysis, Frangoul et al. 2025)",
+    "value": 29,
+    "unit": "patients free from severe VOCs ≥12 consecutive months",
+    "denominator": 30,
+    "time_point": null,
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "NEJM 390(18):1649–1662; PMID 38661449; efficacy endpoint; data cut 14 Jun 2023 (CLIMB SCD-121)"
+  },
+  {
+    "obs_id": "P-002",
+    "source_id": "Advances in Therapy 42(5):2490–2499, 2025 (Frangoul et al.; doi 10.1007/s12325-025-03162-2)",
+    "context": {
+      "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "species": "human",
+      "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)",
+      "genotype": "severe SCD (HbSS per trial inclusion; ages 12–35)"
+    },
+    "readout_kind": "vo-free-event",
+    "assay": "Freedom from severe VOEs for at least 12 consecutive months (broader severe-VOE endpoint: hospital/ER observation lasting ≥24 h, or ≥2 visits to a day unit or ER over a 72-h period; IV treatment required; same CLIMB SCD-121 patient-level data per the endpoint reanalysis: 'These papers share a study group')",
+    "value": 30,
+    "unit": "patients free from severe VOEs ≥12 consecutive months (30/30; 95% CI 88.4–100.0)",
+    "denominator": 30,
+    "time_point": null,
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Frangoul, Locatelli, Eckrich, Imren, Li, Xuan, Grupp (2025); Advances in Therapy 42, 2490–2499; doi 10.1007/s12325-025-03162-2"
+  },
+  {
+    "obs_id": "P-003",
+    "source_id": "PMID 35843392 (Exp Hematol 2022 Aug–Sep)",
+    "context": {
+      "study_group_id": "G2-HYD-TOWNSES-MOUSE",
+      "species": "mouse",
+      "model": "Townes humanized knock-in mouse model (human γβAS βS globin genes)",
+      "intervention": "hydroxyurea (HU; begun at P2)"
+    },
+    "readout_kind": "f-cell-percent",
+    "assay": "Proportion of F cells in peripheral blood",
+    "value": 20,
+    "unit": "% peripheral blood (sustained with HU begun at P2; without HU, F cells virtually undetectable at P14)",
+    "denominator": null,
+    "time_point": "P14",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Exp Hematol PMID 35843392; abstract: 'proportion of F cells in peripheral blood was 100% at P0, declined sharply to 20% at P2... Hydroxyurea given at P2 significantly sustained elevated percentages of F cells in mice at P14'"
+  },
+  {
+    "obs_id": "P-004",
+    "source_id": "PMID 35843392 (Exp Hematol 2022 Aug–Sep)",
+    "context": {
+      "study_group_id": "G2-HYD-TOWNSES-MOUSE",
+      "species": "mouse",
+      "model": "Townes humanized knock-in mouse model (human γβAS βS globin genes)",
+      "intervention": "hydroxyurea (HU; begun at P2)"
+    },
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA in erythroid tissues under hydroxyurea",
+    "value": null,
+    "unit": null,
+    "denominator": null,
+    "time_point": "P14 (no quantitative value available — gap)",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Exp Hematol PMID 35843392; abstract"
+  },
+  {
+    "obs_id": "P-005",
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "context": {
+      "study_group_id": "G3-F-A-ERYTHROBLAST",
+      "species": "human",
+      "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts sorted by FACS (CD71+CD235+; F cells vs bottom-20% HbF− cells)",
+      "intervention": "none (baseline F vs A comparison; hydroxyurea/pomalidomide sensitivity noted)"
+    },
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA: qRT-PCR (~100-fold enriched in F vs A) and ddRT-PCR (γ-globin = ~30% of total globin transcripts in F cells)",
+    "value": 30,
+    "unit": "% of total globin transcripts in F cells (qRT-PCR: ~100-fold enrichment vs A; ddRT-PCR: γ = ~30% of total globin)",
+    "denominator": null,
+    "time_point": "day 7 of differentiation (stage-matched F vs A; HUDEP2)",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Blood 2020; PMC7256358; Figure 1B; ddRT-PCR (F/A ratio ~100; γ = ~30% of globin in F cells)"
+  },
+  {
+    "obs_id": "P-006",
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "context": {
+      "study_group_id": "G3-F-A-ERYTHROBLAST",
+      "species": "human",
+      "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts sorted by FACS (CD71+CD235+; F cells vs bottom-20% HbF− cells)",
+      "intervention": "none (baseline F vs A comparison)"
+    },
+    "readout_kind": "hbF-percent",
+    "assay": "γG-globin protein — fluorescent western blot (concordant with qRT-PCR; F vs A)",
+    "value": 30,
+    "unit": "% of total globin in F cells (protein level)",
+    "denominator": null,
+    "time_point": "day 7 of differentiation",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Blood 2020; PMC7256358; Figure 1C; western blot (concordant with RNA results)"
+  },
+  {
+    "obs_id": "P-007",
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "context": {
+      "study_group_id": "G3-F-A-ERYTHROBLAST",
+      "species": "human",
+      "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts",
+      "intervention": "none"
+    },
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA in stage-matched F/A cells via RNA-seq",
+    "value": null,
+    "unit": null,
+    "denominator": null,
+    "time_point": "day 7 of differentiation (RNA-seq; globin RNA depleted)",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Blood 2020; PMC7256358; supplemental RNA-seq methods (GSE144052)"
+  },
+  {
+    "obs_id": "P-008",
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "context": {
+      "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "species": "human",
+      "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+    },
+    "readout_kind": "hbF-percent",
+    "assay": "Percentage HbF/(F+S) at most recent follow-up",
+    "value": 31,
+    "unit": "percentage HbF (range 20.4–41.3; HbF/(F+S) at most recent follow-up; 6 patients; robust and stable induction)",
+    "denominator": null,
+    "time_point": "most recent follow-up (7–29 months post-infusion; ≥6 months)",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'All the patients who could be fully evaluated achieved robust and stable HbF induction (percentage HbF/(F+S) at most recent follow-up, 20.4 to 41.3%)'"
+  },
+  {
+    "obs_id": "P-009",
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "context": {
+      "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "species": "human",
+      "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+    },
+    "readout_kind": "f-cell-percent",
+    "assay": "F-cells (HbF-containing red cells) — percentage of untransfused red cells",
+    "value": 76,
+    "unit": "percent of untransfused red cells (range 58.9–93.6; 6 patients)",
+    "denominator": null,
+    "time_point": "most recent follow-up",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'F-cells 58.9 to 93.6% of untransfused red cells'"
+  },
+  {
+    "obs_id": "P-010",
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "context": {
+      "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+      "species": "human",
+      "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+    },
+    "readout_kind": "hbF-per-cell",
+    "assay": "HbF per F-cell (direct per-cell measurement)",
+    "value": 14,
+    "unit": "pg per cell (range 9.0–18.6; 6 patients; distinguishes total HbF, the fraction of positive cells, and directly measured per-cell HbF — design-spec seed 4)",
+    "denominator": null,
+    "time_point": "most recent follow-up",
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'HbF per F-cell of 9.0 to 18.6 pg per cell'"
+  },
+  {
+    "obs_id": "P-011",
+    "source_id": "PMID 32681733 (Am J Hematol 95(11):1235–1245, 2020)",
+    "context": {
+      "study_group_id": "G5-INDIVIDUAL-RBC-HBFPERCELL",
+      "species": "human",
+      "intervention": "hydroxyurea (14 SCD patients; HbF measured before and during treatment)"
+    },
+    "readout_kind": "hbF-per-cell",
+    "assay": "Direct per-cell HbF quantification in individual red blood cells by flow cytometry (linear association between mean HbF and mean RBC fluorescence from a calibrated anti-HbF method)",
+    "value": 4,
+    "unit": "pg HbF per RBC — protective threshold (VOC incidence decreased at the 4 pg threshold; 14 SCD patients, before and during hydroxyurea)",
+    "denominator": null,
+    "time_point": null,
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Hebert et al., Am J Hematol 95(11):1235–1245; PMID 32681733; abstract"
+  },
+  {
+    "obs_id": "P-012",
+    "source_id": "Advances in Therapy 42(5):2490–2499, 2025 (Frangoul et al.; doi 10.1007/s12325-025-03162-2)",
+    "context": {
+      "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+      "species": "human",
+      "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)"
+    },
+    "readout_kind": "vo-free-event",
+    "assay": "F-cell durability follow-up >12 months after the 12-month endpoint",
+    "value": null,
+    "unit": null,
+    "denominator": null,
+    "time_point": null,
+    "uncertainty": null,
+    "direction": null,
+    "evidence_locator": "Endpoint reanalysis: Frangoul et al., Advances in Therapy 42, 2490–2499; data cut 14 Jun 2023"
+  }
+]

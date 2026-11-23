@@ -1,0 +1,6 @@
+study_group_id,species,intervention,record_ids,notes
+G1-EXA-CEL-CLIMB-SCD121,human,exa-cel (exagamglogene autotemcel; CLIMB SCD-121),P-001|P-002|P-012,"Two endpoint observations (P-001 29/30, P-002 30/30) share the study group per the endpoint reanalysis ('These papers share a study group'). Ages 12–35; severe SCD (HbSS per trial inclusion)."
+G2-HYD-TOWNSES-MOUSE,mouse,hydroxyurea (Townes humanized mouse model; HU begun at P2),P-003|P-004,"Persistent F-cell elevation (P-003) decoupled from γ-globin RNA induction (P-004 gap)."
+G3-F-A-ERYTHROBLAST,human,"HUDEP2 cell line; stage-matched F/A erythroblasts (FACS CD71+CD235+, bottom-20% HbF−)",P-005|P-006|P-007,"RNA/protein cross-readout matched (P-005, P-006); RNA-seq after globin-RNA depletion = mismatch example (P-007)."
+G4-BCL11A-SILENCING-NEJM2021,human,"BCL11A-shmiR gene therapy (autologous CD34+ cells, BCH-BB694; NCT03282656)",P-008|P-009|P-010,"HbF% + F-cell% + HbF per F-cell ranges across 6 patients."
+G5-INDIVIDUAL-RBC-HBFPERCELL,human,hydroxyurea (14 SCD patients, before/during),P-011,"Direct per-cell HbF quantification; protective threshold of 4 pg/RBC (VOC incidence decrease at ≥4 pg)."

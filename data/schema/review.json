@@ -1,0 +1,39 @@
+{
+  "interface": "review",
+  "description": "Contract for the review interface: a curator's review of a corpus record.",
+  "record_id_field": "review_id",
+  "unknown_states": ["unreported", "ambiguous", "not_applicable", "unknown"],
+  "fields": [
+    {
+      "name": "review_id",
+      "type": "string",
+      "immutable": true,
+      "required": true,
+      "description": "Immutable record ID of the review."
+    },
+    {
+      "name": "curator_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "reviewer_ids",
+      "type": "array",
+      "items": "string"
+    },
+    {
+      "name": "adjudication_state",
+      "type": ["string", "null"],
+      "description": "Adjudication state of a reconciliation, e.g. resolved or escalated."
+    },
+    {
+      "name": "corpus_version",
+      "type": ["string", "null"],
+      "description": "Corpus version the review was made against."
+    },
+    {
+      "name": "reason_for_revision",
+      "type": ["string", "null"]
+    }
+  ]
+}

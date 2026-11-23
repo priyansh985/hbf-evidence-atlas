@@ -1,0 +1,28 @@
+{
+  "record_id": "P-001",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 38661449",
+    "doi": "10.1056/NEJMoa2309676",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38661449/",
+    "figure_table": "CLIMB SCD-121 pivotal trial — efficacy endpoint (severe VOC) tables",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+    "species": "human",
+    "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)",
+    "genotype": "severe SCD (HbSS per trial inclusion: severe SCD; ages 12–35)",
+    "age_years": "12–35"
+  },
+  "observation": {
+    "readout_kind": "vo-free-event",
+    "assay": "Freedom from severe vaso-occlusive crises for at least 12 consecutive months (broad severe-VOC endpoint: any medical facility visit of any duration, any cause; per the endpoint reanalysis, Frangoul et al. 2025)",
+    "value": 29,
+    "unit": "patients free from severe VOCs ≥12 consecutive months",
+    "denominator": 30,
+    "uncertainty": "Wilson 95% CI [0.833, 0.994]; published aggregate — not an efficacy estimate",
+    "evidence_locator": "NEJM 390(18):1649–1662; PMID 38661449; efficacy endpoint; data cut 14 Jun 2023 (CLIMB SCD-121)"
+  },
+  "note": "Published totals from the pivotal trial: 29/30 evaluable (44 participants infused). Reproduced by the endpoint reanalysis: 29/30 (96.7%; 95% CI 82.8–99.9) under the broad severe-VOC definition. See ai-science-lab/outputs/scd-published-endpoint.json."
+}

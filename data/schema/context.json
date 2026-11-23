@@ -1,0 +1,61 @@
+{
+  "interface": "context",
+  "description": "Contract for the context interface: the conditions under which observations were made.",
+  "record_id_field": "study_group_id",
+  "unknown_states": ["unreported", "ambiguous", "not_applicable", "unknown"],
+  "fields": [
+    {
+      "name": "study_group_id",
+      "type": "string",
+      "immutable": true,
+      "required": true,
+      "description": "Immutable ID shared by reports about one study group."
+    },
+    {
+      "name": "species",
+      "type": "string",
+      "required": true,
+      "description": "Homo sapiens or Mus musculus."
+    },
+    {
+      "name": "model",
+      "type": ["string", "null"],
+      "description": "Experimental model (strain, disease model, in-vitro system)."
+    },
+    {
+      "name": "cohort",
+      "type": ["string", "null"],
+      "description": "Cohort or sample group (e.g. patients in steady state)."
+    },
+    {
+      "name": "intervention",
+      "type": ["string", "null"],
+      "description": "Intervention as published."
+    },
+    {
+      "name": "comparator",
+      "type": ["string", "null"],
+      "description": "Comparator arm or condition."
+    },
+    {
+      "name": "stage",
+      "type": ["string", "null"],
+      "description": "Stage or follow-up window of the study."
+    },
+    {
+      "name": "genotype",
+      "type": ["string", "null"],
+      "description": "Genotype context (e.g. BCL11A status)."
+    },
+    {
+      "name": "transfusion_context",
+      "type": ["string", "null"],
+      "description": "Transfusion context (volume, reason, prior transfusions)."
+    },
+    {
+      "name": "sample_linkage",
+      "type": ["string", "null"],
+      "description": "Sample-linkage ID: observations from the same samples share it."
+    }
+  ]
+}

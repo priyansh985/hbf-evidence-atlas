@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HbF Evidence Atlas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>HbF Evidence Atlas</h1>
+  <p class="tagline">Searchable evidence linking claims to published measurements &mdash; corpus version <span id="data-version"></span>.</p>
+</header>
+
+<main class="app">
+  <section class="filters" id="filters">
+    <input type="search" id="search" name="search" placeholder="Filter by claim, readout, value, endpoint..." autocomplete="off">
+    <label for="f-readout">Readout</label>
+    <select id="f-readout" name="f-readout">
+      <option value="">All readouts</option>
+    </select>
+    <label for="f-study">Study type</label>
+    <select id="f-study" name="f-study">
+      <option value="">All studies</option>
+    </select>
+    <label for="f-intervention">Intervention</label>
+    <select id="f-intervention" name="f-intervention">
+      <option value="">All interventions</option>
+    </select>
+    <label for="f-status">Evidence status</label>
+    <select id="f-status" name="f-status">
+      <option value="">All statuses</option>
+    </select>
+  </section>
+
+  <table id="evidence-table">
+    <thead>
+      <tr>
+        <th>Claim</th>
+        <th>Claim type</th>
+        <th>Readout</th>
+        <th>Study type</th>
+        <th>Intervention</th>
+        <th>Value</th>
+        <th>Unit</th>
+        <th>Denominator</th>
+        <th>Time point</th>
+        <th>Sample linkage</th>
+        <th>Evidence status</th>
+        <th>Endpoint definition</th>
+        <th>Source</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+</main>
+
+<aside id="evidence-panel">
+  <h2>Evidence detail</h2>
+  <div id="panel-body"></div>
+</aside>
+
+<canvas id="map-canvas"></canvas>
+
+<script>window.ATLAS_DATA = __ATLAS_DATA__;</script>
+<script src="vendor/gsap.min.js"></script>
+<script type="module" src="atlas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "record_id": "P-005",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "doi": "10.1182/blood.2020005058",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32268371/",
+    "figure_table": "Figure 1 (F vs A erythroblast qRT-PCR and ddRT-PCR; HUDEP2 + primary cultures)",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G3-F-A-ERYTHROBLAST",
+    "species": "human",
+    "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts sorted by FACS (CD71+CD235+; F cells vs bottom-20% HbF− cells)",
+    "intervention": "none (baseline F vs A comparison; hydroxyurea/pomalidomide sensitivity noted)"
+  },
+  "observation": {
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA: qRT-PCR (~100-fold enriched in F vs A) and ddRT-PCR (γ-globin = ~30% of total globin transcripts in F cells)",
+    "value": 30,
+    "unit": "% of total globin transcripts in F cells (qRT-PCR: ~100-fold enrichment vs A; ddRT-PCR: γ = ~30% of total globin)",
+    "denominator": "unknown",
+    "time_point": "day 7 of differentiation (stage-matched F vs A; HUDEP2)",
+    "evidence_locator": "Blood 2020; PMC7256358; Figure 1B; ddRT-PCR (F/A ratio ~100; γ = ~30% of globin in F cells)"
+  },
+  "note": "F/A sorting matched by FACS gating on CD71+CD235+ and HbF staining (bottom 20% HbF− cells as A cells; 'matched by CD71, CD235 and size' per the design spec). F erythroblasts carry γ-globin at ~100-fold vs A in qRT-PCR; ~30% of total globin in F cells by ddRT-PCR."
+}

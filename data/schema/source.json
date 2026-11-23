@@ -1,0 +1,38 @@
+{
+  "interface": "source",
+  "description": "Contract for the source interface: the report or dataset behind evidence records.",
+  "record_id_field": "source_id",
+  "unknown_states": ["unreported", "ambiguous", "not_applicable", "unknown"],
+  "fields": [
+    {
+      "name": "source_id",
+      "type": "string",
+      "immutable": true,
+      "required": true,
+      "description": "DOI or accession — the immutable record ID of the source."
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "Version or edition of the source report."
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Stable URL of the source report."
+    },
+    {
+      "name": "figure_table",
+      "type": ["string", "null"],
+      "description": "Figure, table or panel locator within the source."
+    },
+    {
+      "name": "permission_status",
+      "type": "evidence_state",
+      "default": "observed",
+      "description": "Whether permission exists to cite the source."
+    }
+  ]
+}

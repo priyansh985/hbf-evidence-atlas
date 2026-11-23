@@ -1,0 +1,75 @@
+{
+  "interface": "observation",
+  "description": "Contract for the observation interface: one measured readout.",
+  "record_id_field": "obs_id",
+  "unknown_states": ["unreported", "ambiguous", "not_applicable", "unknown"],
+  "readout_kind_enum": ["gamma-globin-rna", "hbF-percent", "f-cell-percent", "hbF-per-cell", "vo-free-event"],
+  "fields": [
+    {
+      "name": "obs_id",
+      "type": "string",
+      "immutable": true,
+      "required": true,
+      "description": "Immutable record ID of the observation."
+    },
+    {
+      "name": "source_id",
+      "type": "string",
+      "required": true,
+      "description": "Immutable source_id of the linked Source record."
+    },
+    {
+      "name": "context",
+      "type": "context",
+      "required": true
+    },
+    {
+      "name": "readout_kind",
+      "type": "string",
+      "required": true,
+      "enum": ["gamma-globin-rna", "hbF-percent", "f-cell-percent", "hbF-per-cell", "vo-free-event"]
+    },
+    {
+      "name": "assay",
+      "type": "object",
+      "description": "Full assay definition (normalized name plus definition)."
+    },
+    {
+      "name": "value",
+      "type": ["number", "null"]
+    },
+    {
+      "name": "unit",
+      "type": ["string", "null"]
+    },
+    {
+      "name": "denominator",
+      "type": ["integer", "evidence_state"],
+      "description": "Experimental-unit count, or the evidence state when not an integer."
+    },
+    {
+      "name": "time_point",
+      "type": ["string", "null"],
+      "description": "Stage or follow-up window of the measurement."
+    },
+    {
+      "name": "sample_linkage",
+      "type": ["string", "null"],
+      "description": "Sample-linkage ID of the samples the measurement came from."
+    },
+    {
+      "name": "uncertainty",
+      "type": ["number", "null"]
+    },
+    {
+      "name": "direction",
+      "type": ["direction", "null"],
+      "enum": ["concordant", "discordant", "indeterminate"]
+    },
+    {
+      "name": "evidence_locator",
+      "type": ["string", "null"],
+      "description": "Figure, table, panel or section that carries the measurement."
+    }
+  ]
+}

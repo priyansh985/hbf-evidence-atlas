@@ -1,0 +1,132 @@
+[
+  {
+    "case_id": "C-01",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-02",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-03",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-04",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-05",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-06",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-07",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-08",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-09",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-10",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-11",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-12",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-13",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-14",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-15",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-16",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-17",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-18",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-19",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-20",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-21",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-22",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-23",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-24",
+    "predicted": "insufficient",
+    "abstained": false
+  },
+  {
+    "case_id": "C-25",
+    "predicted": "supported",
+    "abstained": false
+  },
+  {
+    "case_id": "C-26",
+    "predicted": "insufficient",
+    "abstained": false
+  }
+]

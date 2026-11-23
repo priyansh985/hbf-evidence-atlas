@@ -1,0 +1,12 @@
+[
+  {
+    "claim_id": "CL-001",
+    "text": "Freedom from severe vaso-occlusive crises for at least 12 consecutive months",
+    "claim_type": "clinical outcome"
+  },
+  {
+    "claim_id": "CL-002",
+    "text": "γ-globin RNA enrichment in HbF+ erythroid cells vs matched HbF− cells",
+    "claim_type": "measurement concordance"
+  }
+]

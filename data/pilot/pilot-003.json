@@ -1,0 +1,26 @@
+{
+  "record_id": "P-003",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 35843392 (Exp Hematol 2022 Aug–Sep)",
+    "doi": "10.1016/j.exphem.2022.07.005",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35843392/",
+    "figure_table": "Abstract of the Townes humanized mouse model paper (per-cell F-cell proportion over time)",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G2-HYD-TOWNSES-MOUSE",
+    "species": "mouse",
+    "model": "Townes humanized knock-in mouse model (human γβAS βS globin genes)",
+    "intervention": "hydroxyurea (HU; begun at P2)"
+  },
+  "observation": {
+    "readout_kind": "f-cell-percent",
+    "assay": "Proportion of F cells in peripheral blood",
+    "value": 20,
+    "unit": "% peripheral blood (sustained with HU begun at P2; without HU, F cells virtually undetectable at P14)",
+    "time_point": "P14",
+    "evidence_locator": "Exp Hematol PMID 35843392; abstract: 'proportion of F cells in peripheral blood was 100% at P0, declined sharply to 20% at P2... Hydroxyurea given at P2 significantly sustained elevated percentages of F cells in mice at P14'"
+  },
+  "note": "Townes mouse model: F cells 100% at P0, 20% at P2; HU begun at P2 sustains F cells at P14 (without HU, F cells virtually undetectable at P14). Decoupling of persistent F-cell elevation (P-003) from γ-globin RNA induction (P-004 gap)."
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "source_id": "PMID 38661449",
+    "version": "1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38661449/",
+    "figure_table": "CLIMB SCD-121 pivotal trial — efficacy endpoint (severe VOC) tables",
+    "permission_status": "observed"
+  },
+  {
+    "source_id": "Advances in Therapy 42(5):2490–2499, 2025 (Frangoul et al.; doi 10.1007/s12325-025-03162-2)",
+    "version": "1",
+    "url": "https://doi.org/10.1007/s12325-025-03162-2",
+    "figure_table": "Reanalysis of the CLIMB SCD-121 patient-level data under the broader severe-VOE definition",
+    "permission_status": "observed"
+  },
+  {
+    "source_id": "PMID 35843392 (Exp Hematol 2022 Aug–Sep)",
+    "version": "1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35843392/",
+    "figure_table": "Abstract of the Townes humanized mouse model paper (per-cell F-cell proportion over time)",
+    "permission_status": "observed"
+  },
+  {
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "version": "1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32268371/",
+    "figure_table": "Figure 1 (F vs A erythroblast qRT-PCR, ddRT-PCR, and western; HUDEP2 + primary cultures)",
+    "permission_status": "observed"
+  },
+  {
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "version": "1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33283990/",
+    "figure_table": "Results of the BCH-BB694 BCL11A-shmiR gene therapy pilot",
+    "permission_status": "observed"
+  },
+  {
+    "source_id": "PMID 32681733 (Am J Hematol 95(11):1235–1245, 2020)",
+    "version": "1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32681733/",
+    "figure_table": "Abstract of the individual-red-cell HbF quantification paper",
+    "permission_status": "observed"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "review_id": "RV-001",
+    "curator_id": "hbf-evidence-atlas-builder",
+    "reviewer_ids": ["hbf-evidence-atlas-builder"],
+    "adjudication_state": "preliminary",
+    "corpus_version": "0.1.0",
+    "reason_for_revision": "Pilot records (12) seeded into the compiled corpus for v0.1.0; feasibility gate passed (12 records, 5 study groups, 4 matched cross-readout comparisons from 3 groups, 3 mismatch examples)."
+  }
+]

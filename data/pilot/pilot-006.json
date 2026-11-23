@@ -1,0 +1,27 @@
+{
+  "record_id": "P-006",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMC7256358 / PMID 32268371 (Blood 2020 135(22):1957–1968)",
+    "doi": "10.1182/blood.2020005058",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32268371/",
+    "figure_table": "Figure 1 (F vs A erythroblast qRT-PCR, ddRT-PCR, and western blot)",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G3-F-A-ERYTHROBLAST",
+    "species": "human",
+    "model": "HUDEP2 erythroid cell line; stage-matched F/A erythroblasts sorted by FACS (CD71+CD235+; F cells vs bottom-20% HbF− cells)",
+    "intervention": "none (baseline F vs A comparison)"
+  },
+  "observation": {
+    "readout_kind": "hbF-percent",
+    "assay": "γG-globin protein — fluorescent western blot (concordant with qRT-PCR; F vs A)",
+    "value": 30,
+    "unit": "% of total globin in F cells (protein level)",
+    "denominator": "unknown",
+    "time_point": "day 7 of differentiation",
+    "evidence_locator": "Blood 2020; PMC7256358; Figure 1C; western blot (concordant with RNA results)"
+  },
+  "note": "Cross-readout match with P-005: F erythroblasts carry γG-globin at the protein level, consistent with the RNA finding; same stage-matched sorting, day 7 of differentiation."
+}

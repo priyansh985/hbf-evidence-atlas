@@ -1,0 +1,23 @@
+{
+  "record_id": "P-004",
+  "record_type": "gap",
+  "source": {
+    "source_id": "PMID 35843392 (Exp Hematol 2022 Aug–Sep)",
+    "doi": "10.1016/j.exphem.2022.07.005",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35843392/",
+    "figure_table": "Abstract of the Townes humanized mouse model paper (per-cell F-cell proportion over time)",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G2-HYD-TOWNSES-MOUSE",
+    "species": "mouse",
+    "model": "Townes humanized knock-in mouse model (human γβAS βS globin genes)",
+    "intervention": "hydroxyurea (HU; begun at P2)"
+  },
+  "observation": {
+    "readout_kind": "gamma-globin-rna",
+    "assay": "γ-globin mRNA in erythroid tissues under hydroxyurea",
+    "evidence_locator": "Exp Hematol PMID 35843392; abstract"
+  },
+  "note": "γ-globin RNA augmentation in erythroid tissues under HU not quantified — the abstract reports a 'lack of augmentation' and attributes the apparent HbF increase to erythropoiesis suppression (myelosuppressive toxicity of HU). Gap: no quantitative γ-globin values; the decoupling with F-cell elevation is the key observation (spec seed 1: 'Capture how persistent F-cell elevation and sustained RNA induction diverged in this model')."
+}

@@ -1,0 +1,45 @@
+{
+  "interface": "comparison",
+  "description": "Contract for the comparison interface: the outcome of comparing two observations for one claim.",
+  "record_id_field": "first_id",
+  "unknown_states": ["unreported", "ambiguous", "not_applicable", "unknown"],
+  "fields": [
+    {
+      "name": "first_id",
+      "type": "string",
+      "immutable": true,
+      "required": true,
+      "description": "Immutable observation ID of the first observation."
+    },
+    {
+      "name": "second_id",
+      "type": ["string", "null"]
+    },
+    {
+      "name": "matched_dimensions",
+      "type": "array",
+      "items": "string",
+      "description": "Dimensions matched between the two observations."
+    },
+    {
+      "name": "support",
+      "type": "support_decision",
+      "enum": ["supported", "contradicted", "insufficient"]
+    },
+    {
+      "name": "direction",
+      "type": ["direction", "null"],
+      "enum": ["concordant", "discordant", "indeterminate"]
+    },
+    {
+      "name": "rationale",
+      "type": "string",
+      "description": "Human-readable explanation of the decision."
+    },
+    {
+      "name": "observation_ids",
+      "type": "array",
+      "items": "string"
+    }
+  ]
+}

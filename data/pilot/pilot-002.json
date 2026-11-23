@@ -1,0 +1,26 @@
+{
+  "record_id": "P-002",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "Advances in Therapy 42(5):2490–2499, 2025 (Frangoul et al.; doi 10.1007/s12325-025-03162-2)",
+    "url": "https://doi.org/10.1007/s12325-025-03162-2",
+    "figure_table": "Reanalysis of the CLIMB SCD-121 patient-level data under the broader severe-VOE definition",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G1-EXA-CEL-CLIMB-SCD121",
+    "species": "human",
+    "intervention": "exa-cel (exagamglogene autotemcel; CLIMB SCD-121)",
+    "genotype": "severe SCD (HbSS per trial inclusion; ages 12–35)",
+    "age_years": "12–35"
+  },
+  "observation": {
+    "readout_kind": "vo-free-event",
+    "assay": "Freedom from severe VOEs for at least 12 consecutive months (broader severe-VOE endpoint: hospital/ER observation lasting ≥24 h, or ≥2 visits to a day unit or ER over a 72-h period; IV treatment required)",
+    "value": 30,
+    "unit": "patients free from severe VOEs ≥12 consecutive months (30/30; 95% CI 88.4–100.0)",
+    "denominator": 30,
+    "evidence_locator": "Frangoul, Locatelli, Eckrich, Imren, Li, Xuan, Grupp (2025); Advances in Therapy 42, 2490–2499; doi 10.1007/s12325-025-03162-2; same CLIMB SCD-121 patient-level data (reanalysis: 'These papers share a study group')"
+  },
+  "note": "Same patient-level data as the pivotal trial; the endpoint reanalysis reproduces 30/30 under the alternate (broader) event rule, with the same study-group ID as P-001."
+}

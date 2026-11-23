@@ -1,0 +1,26 @@
+{
+  "record_id": "P-008",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "doi": "10.1056/NEJMoa2029392",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33283990/",
+    "figure_table": "Results of the BCH-BB694 BCL11A-shmiR gene therapy pilot",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+    "species": "human",
+    "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+  },
+  "observation": {
+    "readout_kind": "hbF-percent",
+    "assay": "Percentage HbF/(F+S) at most recent follow-up",
+    "value": [20.4, 41.3],
+    "unit": "percentage HbF (range across 6 patients; robust and stable induction reported)",
+    "denominator": "unknown",
+    "time_point": "most recent follow-up (7–29 months post-infusion; ≥6 months)",
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'All the patients who could be fully evaluated achieved robust and stable HbF induction (percentage HbF/(F+S) at most recent follow-up, 20.4 to 41.3%)'"
+  },
+  "note": "Six patients (BCH-BB694, autologous CD34+ cells, BCL11A-shmiR knockdown; follow-up 7–29 months). HbF broadly distributed in red cells; HbF per F-cell of 9.0–18.6 pg per cell."
+}

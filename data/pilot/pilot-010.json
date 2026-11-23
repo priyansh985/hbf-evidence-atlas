@@ -1,0 +1,26 @@
+{
+  "record_id": "P-010",
+  "record_type": "evidence",
+  "source": {
+    "source_id": "PMID 33283990 (N Engl J Med 384(3):205–215, 2021)",
+    "doi": "10.1056/NEJMoa2029392",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33283990/",
+    "figure_table": "Results of the BCH-BB694 BCL11A-shmiR gene therapy pilot",
+    "permission": "public"
+  },
+  "context": {
+    "study_group_id": "G4-BCL11A-SILENCING-NEJM2021",
+    "species": "human",
+    "intervention": "BCL11A-shmiR gene therapy (autologous CD34+ cells transduced with BCH-BB694 lentiviral vector; ClinicalTrials.gov NCT03282656)"
+  },
+  "observation": {
+    "readout_kind": "hbF-per-cell",
+    "assay": "HbF per F-cell (direct per-cell measurement)",
+    "value": [9.0, 18.6],
+    "unit": "pg per cell (range across 6 patients; distinguishes total HbF, the fraction of positive cells, and directly measured per-cell HbF — design-spec seed 4)",
+    "denominator": "unknown",
+    "time_point": "most recent follow-up",
+    "evidence_locator": "Esrick et al., NEJM 384(3):205–215; PMID 33283990; 'RESULTS' — 'HbF per F-cell of 9.0 to 18.6 pg per cell'"
+  },
+  "note": "Cross-readout within the same pilot (G4): HbF% (P-008), F-cell% (P-009), and HbF per F-cell (P-010)."
+}
