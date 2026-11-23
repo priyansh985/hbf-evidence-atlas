@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HbF Evidence Atlas — Interactive Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>HbF Evidence Atlas — Interactive Dashboard</h1>
+    <p class="subtitle">Interactive exploration of the evidence: a Three.js map of observations plus a searchable, filterable case table with an evidence panel. Runs offline; version 0.1.0.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+  <main>
+    <nav class="controls">
+      <input type="search" id="search" placeholder="Search claims, values, locators…">
+      <select id="f-readout" aria-label="Readout filter"><option value="">All readouts</option></select>
+      <select id="f-study" aria-label="Study type filter"><option value="">All study types</option></select>
+      <select id="f-intervention" aria-label="Intervention filter"><option value="">All interventions</option></select>
+      <select id="f-status" aria-label="Evidence status filter"><option value="">All statuses</option></select>
+    </nav>
+    <div class="layout">
+      <section class="map-panel">
+        <h2>Observation map</h2>
+        <canvas id="map-canvas" width="640" height="360"></canvas>
+        <div class="legend" id="legend"></div>
+      </section>
+      <aside class="panel" id="evidence-panel">
+        <h2>Evidence</h2>
+        <div id="panel-content"></div>
+      </aside>
+      <section class="table-panel">
+        <h2>Cases</h2>
+        <div class="count" id="row-count"></div>
+        <table id="evidence-table">
+          <thead>
+            <tr>
+              <th>Claim</th><th>Readout</th><th>Study type</th><th>Intervention</th>
+              <th>Value</th><th>Unit</th><th>Denominator</th><th>Time point</th>
+              <th>Sample linkage</th><th>Evidence status</th><th>Endpoint definition</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+  <script>window.ATLAS_DATA = __ATLAS_DATA__;</script>
+  <script src="vendor/gsap.min.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

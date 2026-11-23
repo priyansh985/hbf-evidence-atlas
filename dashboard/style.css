@@ -1,0 +1,46 @@
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --ink: #1c2330;
+  --muted: #6b7280;
+  --line: #dfe3ea;
+  --blue: #2563eb;
+  --ok: #15803d;
+  --warn: #b91c1c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--line); }
+header h1 { margin: 0; font-size: 1.15rem; }
+.subtitle { margin: 0.3rem 0 0; color: var(--muted); }
+.stats { margin-top: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+main { padding: 0.75rem 1.25rem 2rem; }
+.controls { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 0.75rem; }
+.controls input[type="search"] { min-width: 16rem; }
+select { border: 1px solid var(--line); background: var(--panel); padding: 0.25rem 0.4rem; border-radius: 4px; }
+.layout { display: grid; grid-template-columns: 42% 1fr; gap: 1rem; align-items: start; }
+.map-panel, .table-panel, .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 0.75rem 1rem; }
+h2 { font-size: 1rem; margin: 0.25rem 0 0.5rem; }
+canvas { width: 100%; height: 360px; border: 1px solid var(--line); border-radius: 6px; background: radial-gradient(circle at 35% 30%, #2a3f5f 0%, #1c2433 70%); }
+#evidence-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+th, td { border-bottom: 1px solid var(--line); padding: 0.35rem 0.4rem; text-align: left; font-size: 0.82rem; vertical-align: top; }
+th { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+tr.row { cursor: pointer; }
+tr.row:hover { background: #f0f5ff; }
+tr.row.selected { background: #e3eafd; }
+.count { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.35rem; }
+.panel { max-height: 72vh; overflow-y: auto; }
+.field { display: flex; gap: 0.5rem; margin: 0.15rem 0; }
+.field .label { color: var(--muted); min-width: 8rem; }
+a.source-link { color: var(--blue); }
+.unsafe-link { color: var(--warn); text-decoration: line-through; }
+.status-supported { color: var(--ok); font-weight: 600; }
+.status-contradicted { color: var(--warn); font-weight: 600; }
+.status-insufficient { color: var(--muted); }
+.legend { font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem; }
+.empty { color: var(--muted); font-style: italic; }

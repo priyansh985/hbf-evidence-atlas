@@ -5,9 +5,9 @@ measurements about γ-globin RNA, total HbF, F-cell %, HbF-per-cell and clinical
 outcomes into a checked, traceable case set — what was measured, what can be compared,
 the narrowest missing observation, and the cited source locator.
 
-Build state: **Phases 0–5 of the build plan complete** — research pilot, validation/
-comparison rules, static atlas report (Three.js + GSAP + vanilla JS), and the rules-only
-benchmark evaluation. `py -m unittest discover -s tests -v` → 30 tests OK.
+Build state: **Phases 0–6 of the build plan complete** — research pilot, validation/
+comparison rules, static atlas report (Three.js + GSAP + vanilla JS), rules-only
+benchmark evaluation, and the interactive web dashboard. `py -m unittest discover -s tests -v` → 34 tests OK.
 
 ---
 
@@ -34,21 +34,26 @@ cases.
 ## Tech stack
 
 - **Language:** Python 3.12+, stdlib only (`unittest`, `json`, `csv`, `pathlib`).
-- **JS (3):** Vanilla JavaScript (report interactivity: search, filters, evidence
-  details); Three.js (interactive dimension map); GSAP (report animations/micro-interactions).
+- **JS (3):** Vanilla JavaScript (report/dashboard interactivity: search, filters,
+  evidence details); Three.js (interactive dimension map, in the report and the
+  dashboard); GSAP (report/dashboard animations/micro-interactions).
 - **Vendored assets:** Three.js 0.187.0 (`vendor/three.min.js` — ES-module build, plus
   `vendor/three.core.js`) and GSAP 3.15.1 (`vendor/gsap.min.js`), recorded in
   `vendor/versions.json`.
 - **Tests:** stdlib `unittest`; `py -m unittest discover -s tests -v`.
-- **CLI:** `py -m hbf_atlas validate <corpus_dir>` and
-  `py -m hbf_atlas build-report <corpus_dir> <output_dir>`.
+- **CLI:** `py -m hbf_atlas validate <corpus_dir>`,
+  `py -m hbf_atlas build-report <corpus_dir> <output_dir>` and
+  `py -m hbf_atlas build-dashboard <corpus_dir> <output_dir>`.
 
 ## Layout
 
 - `src/hbf_atlas/` — package: `models.py` (record dataclasses + explicit-unknown
   vocabulary), `io.py` (`load_corpus`, `validate_corpus`), `compare.py`
-  (`assess_comparison`), `report.py` (`export_corpus`), `evaluate.py` (`evaluate`),
-  `__main__.py` (CLI), `static/` (report assets + vendor).
+  (`assess_comparison`), `report.py` (`export_corpus`), `dashboard.py`
+  (`export_dashboard`), `evaluate.py` (`evaluate`), `__main__.py` (CLI),
+  `static/` (report + dashboard assets + vendor).
+- `dashboard/` — interactive web dashboard (`index.html`, `dashboard.js`, `style.css`,
+  `atlas-data.json`, `vendor/`).
 - `data/corpus/` — the compiled corpus: `sources.json`, `observations.json`,
   `claims.json`, `reviews.json`, `data_version.txt` (= 0.1.0).
 - `data/pilot/` — pilot evidence records: `pilot-001.json` … `pilot-012.json`.
@@ -62,17 +67,17 @@ cases.
 - `out/atlas-report/` — built atlas export: `index.html`, `data.json`, `vendor/`,
   `atlas.js`, `style.css`.
 - `tests/` — unit tests: `test_validation.py`, `test_comparison.py`, `test_report.py`,
-  `test_evaluate.py`.
+  `test_dashboard.py`, `test_evaluate.py`.
 - `docs/superpowers/` — `plans/` (user's build plan + my checkbox-tracked plan),
   `specs/` (research protocol + design).
 
 ## How to use
 
-### 1. Run the test suite (30 tests)
+### 1. Run the test suite (34 tests)
 
     py -m unittest discover -s tests -v
 
-Expect `Ran 30 tests ... OK`.
+Expect `Ran 34 tests ... OK`.
 
 ### 2. Validate the corpus
 
@@ -112,6 +117,36 @@ $env:PYTHONPATH = "F:\New folder (4)\Scientific_Projects\hbf-evidence-atlas"; py
 `benchmark/predictions-rules.json` (baseline predictions) and `benchmark/evaluation.json`
 (the serialized Evaluation) and is deterministic — re-running produces identical results.
 
+## Interactive dashboard
+
+The interactive web dashboard (`dashboard/`) is an interactive version of the static atlas
+report: a search box, four filters (readout, study type, intervention, evidence status), a
+searchable case table with an evidence panel, and a Three.js map of the observations. Build
+it with:
+
+    py -m hbf_atlas build-dashboard data/corpus dashboard
+
+then open `dashboard/index.html` in a browser (offline; the export embeds the data as
+`window.ATLAS_DATA`). How to use it:
+
+- **Search** — filters claims, values, locators and all fields (case-insensitive).
+- **Filters** — by readout, study type (human/mouse), intervention and evidence status
+  (supported/contradicted/insufficient).
+- **Case table** — click a row to open the evidence panel: claim, decision status/direction/
+  rationale, observation (value, unit, denominator, time point, sample linkage, endpoint
+  definition) and source links (http/https only; unsafe links shown as plain text).
+- **Three.js map** — the canvas places each observation by its time point (x) and support
+  level (y), colored by readout kind, sized by denominator; click a point to select the
+  case (hover highlights).
+
+How researchers use the atlas: the same screening workflow as the static report — filter and
+search the cases; each row shows the claim, its readout/value/unit/denominator and the
+evidence status; the panel shows the full decision with the source locator. The dashboard
+makes cross-readout patterns visible at a glance: the concordant matched pairs (e.g. RNA +
+protein in the F/A study), the exa-cel endpoint definitions (29/30 vs 30/30), and the
+decoupled patterns (e.g. the hydroxyurea mouse-model gap: F cells sustained while gamma-globin
+RNA is unmeasured).
+
 ## Results so far
 
 - **Research pilot (Phase 1):** 12 records (P-001–P-012) across 5 independent study groups
@@ -121,6 +156,8 @@ $env:PYTHONPATH = "F:\New folder (4)\Scientific_Projects\hbf-evidence-atlas"; py
   Decision: **proceed**. See `research/pilot-findings.md`.
 - **Atlas (Phases 2–3):** `out/atlas-report/` — data_version 0.1.0, 6 sources, 12
   observations, 2 claims, 24 rows; `window.ATLAS_DATA` embedded in `index.html`.
+- **Interactive dashboard (Phase 6):** `dashboard/` — built with
+  `py -m hbf_atlas build-dashboard data/corpus dashboard` (3 JS: Vanilla/Three.js/GSAP).
 - **Benchmark (Phase 4):** 26 cases across 5 groups (holdout = all, `benchmark/split.json`);
   reference labels reviewed and reconciled (`benchmark/labels.md`); rules-only baseline run
   — metrics: unsupported endorsement rate 0.167 (1/6 — false endorsement C-04), supported-
@@ -135,6 +172,8 @@ $env:PYTHONPATH = "F:\New folder (4)\Scientific_Projects\hbf-evidence-atlas"; py
 - Design spec / research protocol: `docs/superpowers/specs/2026-11-22-hbf-evidence-atlas-design.md`
   (also at `ai-science-lab/docs/superpowers/specs/`)
 - Pilot: `research/search-log.md`, `research/screening.csv`, `research/pilot-findings.md`
+- Interactive dashboard: `dashboard/`, `src/hbf_atlas/dashboard.py`,
+  `src/hbf_atlas/static/dashboard/`
 
 ## Versioning
 

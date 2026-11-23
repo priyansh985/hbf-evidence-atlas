@@ -17,6 +17,7 @@ import argparse
 import sys
 from pathlib import Path
 
+from hbf_atlas.dashboard import export_dashboard
 from hbf_atlas.io import load_corpus, validate_corpus
 from hbf_atlas.models import Corpus, Issue, Severity
 from hbf_atlas.report import export_corpus
@@ -89,14 +90,34 @@ def build_parser() -> argparse.ArgumentParser:
     report_parser = subparsers.add_parser("build-report", help="export the local atlas report")
     report_parser.add_argument("corpus_dir", type=Path, help="corpus directory to report on")
     report_parser.add_argument("output_dir", type=Path, help="directory to write the report into")
+
+    dashboard_parser = subparsers.add_parser("build-dashboard", help="export the interactive web dashboard")
+    dashboard_parser.add_argument("corpus_dir", type=Path, help="corpus directory for the dashboard data")
+    dashboard_parser.add_argument("output_dir", type=Path, help="directory to write the dashboard into")
     return parser
+
+
+def cmd_build_dashboard(corpus_dir: Path, output_dir: Path) -> int:
+    loaded = _load_and_validate(corpus_dir)
+    if loaded is None:
+        return 1
+    corpus, issues = loaded
+    _print_issues(issues)
+    if _has_errors(issues):
+        print("error: validation failed; dashboard not written", file=sys.stderr)
+        return 1
+    export_dashboard(corpus, output_dir)
+    print(f"wrote {output_dir}/index.html, dashboard.js, style.css, atlas-data.json, vendor/")
+    return 0
 
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.command == "validate":
         return cmd_validate(args.directory)
-    return cmd_build_report(args.corpus_dir, args.output_dir)
+    if args.command == "build-report":
+        return cmd_build_report(args.corpus_dir, args.output_dir)
+    return cmd_build_dashboard(args.corpus_dir, args.output_dir)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,22 @@
+feat: interactive web dashboard for the HbF Evidence Atlas
+
+- src/hbf_atlas/dashboard.py: export_dashboard(corpus, output_dir) — writes
+  index.html (search + filters by readout/study type/intervention/evidence
+  status, case table with evidence panel, Three.js map, GSAP transitions),
+  dashboard.js, style.css, atlas-data.json and vendor/ copies.
+- src/hbf_atlas/static/dashboard/{index.html, dashboard.js, style.css} —
+  dashboard assets (vanilla JS + Three.js + GSAP; Three.js loads as an ES
+  module, consistent with the report).
+- src/hbf_atlas/__main__.py: new `build-dashboard` subcommand
+  (py -m hbf_atlas build-dashboard <corpus_dir> <output_dir>; validates first).
+- tests/test_dashboard.py — 4 tests (files written; page embeds data; data
+  structure: data_version + rows = 2 claims x 12 observations; export
+  determinism). `py -m unittest discover -s tests -v` → 34 tests OK;
+  `node --check dashboard/dashboard.js` → pass; browser check unavailable
+  (no desktop browser connected in this session).
+- README.md — Interactive dashboard section (purpose, how to open/use, how
+  researchers use the atlas).
+- dashboard/ — built at workspace root via
+  `py -m hbf_atlas build-dashboard data/corpus dashboard`
+  (index.html 63739 B, dashboard.js 13259 B, style.css 2379 B,
+  atlas-data.json 78380 B, vendor/).

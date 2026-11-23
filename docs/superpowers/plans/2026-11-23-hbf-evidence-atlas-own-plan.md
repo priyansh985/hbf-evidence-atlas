@@ -82,6 +82,16 @@ Files: `benchmark/split.json`, `src/hbf_atlas/evaluate.py`, `reports/evaluation.
 - [x] Handoff: the first-session handoff is a short search log + two verified observations (29/30 + 30/30); the ten-case audit is finished and the feasibility gate passed before product code.
 - [x] Stop rule: any phase's completion check not met → fix it or report before proceeding; no new scope (e.g., a web UI or new data formats) without approval.
 
+### Phase 6 — Interactive web dashboard (user-requested, Phase 5 follow-up)
+
+- [x] `src/hbf_atlas/dashboard.py`: `export_dashboard(corpus, output_dir)` — writes `output_dir/{index.html, dashboard.js, style.css, atlas-data.json, vendor/}` (deterministic — same corpus → identical `index.html`/`atlas-data.json`/`vendor`). The page = search + filters (readout, study type, intervention, evidence status), case table with evidence panel, Three.js map (points placed by time point + support level, colored by readout kind, sized by denominator), GSAP transitions (respects prefers-reduced-motion). Offline; `window.ATLAS_DATA` embedded escaped.
+- [x] `src/hbf_atlas/static/dashboard/{index.html, dashboard.js, style.css}` — dashboard assets (vanilla JS + Three.js + GSAP; Three.js loads as an ES module, consistent with the report).
+- [x] CLI: `py -m hbf_atlas build-dashboard <corpus_dir> <output_dir>` (validates first; exit 1 on ERRORs).
+- [x] `tests/test_dashboard.py` — 4 tests (files written; page embeds data; atlas-data structure: `data_version` + `rows` = 2 claims × 12 observations; export determinism); `py -m unittest discover -s tests -v` → 34 tests OK; `node --check dashboard/dashboard.js` → pass.
+- [x] `README.md` — "Interactive dashboard" section (purpose, how to open/use, how researchers use the atlas).
+- [x] `dashboard/` — built at workspace root via `py -m hbf_atlas build-dashboard data/corpus dashboard` (index.html 63739 B, dashboard.js 13259 B, style.css 2379 B, atlas-data.json 78380 B, vendor/). Browser tool in this session: no desktop browser connected — live-browser check not possible; verified via `node --check` + the test suite.
+- [x] Committed + pushed (new commit after `2884e7d`).
+
 ## Done conditions (from the user's build plan)
 
 - [x] `py -m unittest discover -s tests -v` passes — verified: `Ran 30 tests in 1.045s — OK`.
